@@ -23,7 +23,7 @@ function prompt {
     }
 
     # 时间戳
-    $timestamp = [System.DateTime]::Now.ToString('HH:mm:ss')
+    $timestamp = Get-Date -Format "HH:mm:ss"
 
     # 输出提示符
     Write-Host -NoNewline -ForegroundColor Cyan $script:currentUserHost
