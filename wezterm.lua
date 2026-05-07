@@ -30,15 +30,15 @@ end)
 -- ===================== 快捷键配置 =====================
 local act = wezterm.action
 config.keys = {
-  { key = "h", mods = "SHIFT", action = act.SplitHorizontal {} },
-  { key = "v", mods = "SHIFT", action = act.SplitVertical {} },
+  { key = "h", mods = "ALT", action = act.SplitHorizontal {} },
+  { key = "v", mods = "ALT", action = act.SplitVertical {} },
   { key = "LeftArrow", mods = "CTRL", action = act.ActivatePaneDirection "Left" },
   { key = "RightArrow", mods = "CTRL", action = act.ActivatePaneDirection "Right" },
   { key = "UpArrow", mods = "CTRL", action = act.ActivatePaneDirection "Up" },
   { key = "DownArrow", mods = "CTRL", action = act.ActivatePaneDirection "Down" },
-  { key = "w", mods = "SHIFT", action = act.CloseCurrentPane { confirm = false } },
-  { key = 't', mods = 'SHIFT', action = act.SpawnTab 'DefaultDomain' },
-  { key = 'q', mods = 'SHIFT', action = act.CloseCurrentTab { confirm = false } },
+  { key = "q", mods = "ALT", action = act.CloseCurrentPane { confirm = false } },
+  { key = 't', mods = 'ALT', action = act.SpawnTab 'DefaultDomain' },
+  { key = 'w', mods = 'ALT', action = act.CloseCurrentTab { confirm = false } },
 }
 
 for i = 1, 8 do
